@@ -1003,6 +1003,9 @@ footer p {
     margin-top: 120vh; } }
 
 @media screen and (max-width: 480px) {
+  .weird-section .weird-container{
+    padding: 0 !important;
+  }
   #secWrapper {
     margin-top: 15vh; }
   .about-right {
