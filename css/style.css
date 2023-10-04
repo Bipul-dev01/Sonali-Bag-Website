@@ -21,7 +21,9 @@ html {
 
 .navbar {
   height: 75px;
-  background: #042910; }
+  background: #042910;
+  
+}
   .navbar .nav-item {
     padding-left: 1em; }
   .navbar .nav-link {
@@ -1074,6 +1076,7 @@ footer p {
     min-height: 300px; } }
 
 @media (max-width: 480px) {
+  
   .carousel h2 {
     font-size: 2.5rem; }
   #getStarted {
