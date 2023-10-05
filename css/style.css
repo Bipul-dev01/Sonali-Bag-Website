@@ -122,7 +122,7 @@ html {
 
 
 /* ***************************************************************
-  Home section Styling
+    Home section Styling
 *************************************************************** */
 
 .weird-section{
@@ -502,6 +502,10 @@ footer p {
 #myBtn:hover {
   background: #606060; }
 
+/* ******************************************************
+Styling About.html 
+****************************************************** */
+
 #page-header {
   margin-top: 110px;
   background: url(../images/juteFarmer.jpg);
@@ -518,7 +522,8 @@ footer p {
 
 #secWrapper {
   box-sizing: border-box;
-  margin-top: 50px; }
+  margin-top: 50px; 
+}
 
 .about-wrapper {
   height: 100vh; }
@@ -706,6 +711,9 @@ footer p {
   text-align: justify;
   line-height: 1.6; }
 
+#author{
+  margin-bottom: 60px;
+}
 #author img {
   margin-top: -50px; }
 
@@ -808,6 +816,10 @@ footer p {
   color: #fff;
   font-weight: 400;
   font-style: italic; }
+
+/* *******************************************************
+    Styling Service.html
+******************************************************* */
 
 #productDisplay {
   margin-top: 110px; }
@@ -1010,11 +1022,21 @@ footer p {
     padding: 0 !important;
   }
   #secWrapper {
-    margin-top: 15vh; }
+    margin-top: 15vh; 
+  }
   .about-right {
-    margin-top: 40vh; }
+    /* margin-top: 12vh;  */
+    margin-top: 10vh;
+    padding: 30px;
+  }
   .article {
-    margin-top: 180vh; } }
+    /* margin-top: 180vh;  */
+    margin-top: 120vh;
+  } 
+  #author{
+    margin-bottom: 60px;
+  }
+}
 
 @media (max-width: 991px) {
   footer .containerFooter .aboutusFooter{
@@ -1122,6 +1144,17 @@ footer p {
     width: 100%;
     height: 200px;
   }
+}
+@media (max-width:480px){
+  .containerProduct {
+    padding: 40px; 
+  }  
+   .containerProduct .text-center{
+      padding: 25px !important;
+   }
+   .containerProduct .text-center .marginTop{
+      margin-top: 30px !important;
+   }
 }
 /* ****************************************************************
     Text Animation Media Query
