@@ -866,16 +866,16 @@ footer p {
 .text-animation .infinity-text h1{
   font-size: 190px;
   line-height: 160px;
-  background: url('../images/finalBackAnimation.png');
+  background: url('../images/back-animation.png');
   color: transparent;
   -webkit-text-stroke: 1px #fff; 
   -webkit-background-clip: text;
   background-position: 0 0;
-  animation: back 20s linear infinite;   
+  animation: back 10s linear infinite;   
 }
 @keyframes back{
     100%{
-        background-position: 1000px 0;
+        background-position: 2000px 0;
     }
 }
 
@@ -1080,6 +1080,9 @@ footer p {
     height: 140px;
     margin-top: 140px;
     margin-bottom: -50px;
+    /* background: url("../images/finalBackAnimation.png") center;
+    background-repeat: no-repeat;
+    object-fit: cover; */
   }
   .text-animation .infinity-text h1{
     font-size: 55px;
