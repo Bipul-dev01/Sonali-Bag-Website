@@ -133,7 +133,7 @@ html{
     align-items: center;
     min-height: 100vh;
     background: #3c2846;
-    margin-top: 60px;
+    margin-top: 47px;
     margin-bottom: 60px;
 }
 .weird-container{
@@ -766,7 +766,8 @@ footer p {
   background: #fff;
   border-radius: 5px;
   height: 380px;
-  overflow-y: scroll; }
+  overflow-y: scroll; 
+}
 
 .containerVdo .video-list .title {
   font-size: 15px; }
@@ -779,7 +780,7 @@ footer p {
   border-radius: 50px; }
 
 .containerVdo .video-list::webkit-scrollbar-thumb {
-  background: #666;
+  background: #666666;
   border-radius: 50px; }
 
 .containerVdo .video-list .vid video {
@@ -798,7 +799,7 @@ footer p {
   cursor: pointer; }
 
 .containerVdo .video-list .vid:hover {
-  background: #eee; }
+  background: #8cb9d4; }
 
 .containerVdo .video-list .vid.active {
   background: #2980b9; }
@@ -822,9 +823,65 @@ footer p {
 /* *******************************************************
     Styling Service.html
 ******************************************************* */
+.rotatingContainer{
+    background-color: #0e6ffc;
+    margin-top: 130px;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 45px;
+    font-weight: 500;
+}
+.wrapper-rotating{
+    box-sizing: content-box;
+    background-color: #ddd4d4;
+    height: 70px;
+    padding: 40px 40px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+.words-rotating{
+    overflow: hidden;
+}
+.words-rotating span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    /* border: 1px solid orange; */
+    animation: spin_words 7s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
 
 #productDisplay {
-  margin-top: 110px; }
+  margin-top: 60px; }
 
 .containerProduct {
   padding: 50px;
@@ -855,8 +912,8 @@ footer p {
   background-repeat: no-repeat;
   object-fit: cover;
  
-  margin-top: 140px;
-  margin-bottom: -50px;
+  margin-top: 130px;
+  margin-bottom: -60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1078,8 +1135,8 @@ footer p {
   .text-animation{
     width: 100%;
     height: 140px;
-    margin-top: 140px;
-    margin-bottom: -50px;
+    margin-top: 120px;
+    margin-bottom: -70px;
     /* background: url("../images/finalBackAnimation.png") center;
     background-repeat: no-repeat;
     object-fit: cover; */
@@ -1148,8 +1205,7 @@ footer p {
     opacity: 0.9;  */
   }
     
-  #navbarNav .nav-item .nav-link {
-    
+  #navbarNav .nav-item .nav-link { 
     font-size: 18px;
     font-weight: 600;
     /* color: #0fe621; */
@@ -1208,6 +1264,17 @@ footer p {
   }
 }
 @media (max-width:480px){
+  .rotatingContainer{
+    margin-top: 110px;
+    margin-bottom: -20px;
+    height: 20vh;
+    font-size: 23px;
+    font-weight: 500;
+  }
+.wrapper-rotating{
+    height: 30px;
+    padding: 30px 25px;
+  }
   .containerProduct {
     padding: 40px; 
   }  
@@ -1219,7 +1286,7 @@ footer p {
    }
 }
 /* ****************************************************************
-    Text Animation Media Query
+    Text Animation (Home Page) Media Query
 **************************************************************** */
 
 @media (max-width:480px){
