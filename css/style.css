@@ -1055,7 +1055,7 @@ footer p {
 @media (max-width: 991px) {   
   /* About Us Page */
     .article {
-        margin-top: 40vh; 
+        margin-top: 100vh; 
       }  
     /* Blog/Gallery Page */
     .containerVdo {
@@ -1063,6 +1063,13 @@ footer p {
         padding: 10px; 
       } 
   /* Contact Us Page */
+    .text-animation{
+        width: 100%;
+        height: 150px;
+      }
+    .text-animation .infinity-text h1{
+        font-size: 110px;
+      }
     #contactUs {
         background: #03e9f5;
         padding: 20px;
@@ -1163,6 +1170,19 @@ footer p {
         #navbarNav .nav-item:nth-child(1) {
             margin-top: 30px; 
         }
+    /* Home Page Carousel */
+        .carousel-item .container .carousel-caption  h1{
+            font-size: 20px;
+        }
+        .carousel-img-1 .container p{
+            font-size: 16px;
+        }
+        .carousel-img-2 .container h1{
+            font-size: 35px;
+        }
+        .carousel-img-2 .container p{
+            font-size: 23px;
+        }
         #getStarted {
             min-height: 300px; 
         } 
@@ -1175,10 +1195,17 @@ footer p {
         } 
     /* Services Page */
         #productDisplay .containerProduct .imageProduct img{
-            width: 100%;
-            height: 200px;
+            width: 90%;
+            height: 300px !important;
         }
-    /* Contact Us Page */
+    /* Contact Us Page */  
+        .text-animation{
+            width: 100%;
+            height: 150px;
+        }
+        .text-animation .infinity-text h1{
+            font-size: 90px;
+        }
         #contactUs {
             background: #03e9f5;
             padding: 20px;
@@ -1199,6 +1226,16 @@ footer p {
       .containerVdo {
           grid-template-columns: 1fr; 
         } 
+}
+@media screen and (max-width: 560px){
+   /*Contact Us Page */  
+      .text-animation{
+          width: 100%;
+          height: 130px;
+        }
+      .text-animation .infinity-text h1{
+          font-size: 70px;
+        }
 }
 @media screen and (max-width: 480px) {
   /*Home Page Preloader */
@@ -1319,7 +1356,6 @@ footer p {
           animation: back 30s linear infinite;   
       }
 }
-
 
 
 
