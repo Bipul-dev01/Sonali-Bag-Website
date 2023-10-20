@@ -6,6 +6,47 @@
 html{
   scroll-behavior: smooth;
 }
+.carousel-indicators li{
+  width: 30px;
+  height:6px;
+  background-color: rgb(225, 245, 6);
+}
+.carousel .carousel-control-prev{
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+ background-color: rgb(167, 168, 150);
+ opacity: 0.4;
+  border-radius: 50px;
+  background-position: 50%;
+}
+.carousel .carousel-control-next{
+  position: absolute;
+  right: 43px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+ background-color: rgb(167, 168, 150);
+ opacity: 0.4;
+  border-radius: 50px;
+  background-position: 50%;
+}
+.carousel .carousel-control-prev:hover{
+  background-color: crimson;  
+}
+.carousel .carousel-control-next:hover{
+   background-color: crimson; 
+}
+/* .carousel-control-prev-icon{
+  color: #000;
+  font-size: 50px;
+}
+#myCarousel a{
+  color: #000;
+  font-size: 50px;
+} */
 /* Preloader */
 #loading {
   position: relative;
@@ -83,11 +124,17 @@ html{
 /* ******************************************************
     Styling Carousel
 ****************************************************** */
+#showcase{
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9);
+}
 .carousel-item {
   position: relative;
   /* height: 540px; */
   height: 600px;
-  width: 100%; }
+  width: 100%; 
+  background-size: cover;
+ 
+}
 .carousel-img-1 {
   background: url("../img/PM-101.png");
   background-size: cover;  
@@ -285,17 +332,22 @@ html{
     Home Page - Home Youtube Video Section
 *********************************************************** */
 .maxWidth200 {
-  padding: 5%; }
-  .maxWidth200 h2 {
+  padding: 5%; 
+}
+  .maxWidth200 h2{
     margin-bottom: 4vh;
     font-weight: 600;
-    color: green 
+    color: green ;
+    text-shadow: 2px 2px #000;
+    font-family: 'Poppins', sans-serif;
   }
 .containerYoutubeVideo {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  border: 5px solid red; }
+  border: 5px solid crimson; 
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9);
+}
 .containerYoutubeVideo iframe {
   position: absolute;
   top: 0;
@@ -756,8 +808,86 @@ footer p {
 /* ******************************************************
    Styling Gallery/Blog.html 
 ****************************************************** */
+/* Filterable Image Gallery */
+.containerFilter{
+    position: relative;
+    /* min-height: 100vh; */
+    background: #e7f2fd;
+    max-width: 1350px;
+    width: 100%;
+    margin: 50px auto;
+    margin-top: 100px;
+    padding: 20px;   
+}
+button1{
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.filter_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+button1.active{
+    background: #4070f4;
+    color: #fff;
+}
+button1:hover{
+    background: #4070f4;
+    color: #fff;
+}
+.filterable_cards{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardFilter{
+    /* flex-grow: 1; */
+    flex-basis: 300px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.cardFilter.hide{
+    display: none;
+}
+.cardFilter img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.card_body{
+    padding: 15px 20px 20px;
+}
+.card_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.card_text{
+    font-size: 18px;
+    color: #333;
+}
+
+/* Video Gallary */
+
 #videoGallery {
-  margin-top: 100px;
+  margin-top: 60px;
   box-sizing: border-box;
   text-transform: capitalize;
   background: #eee; }
@@ -765,7 +895,8 @@ footer p {
   color: #444;
   font-size: 40px;
   text-align: center;
-  padding: 10px; }
+  padding: 10px; 
+  margin-bottom: 30px;}
 .containerVdo {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -925,6 +1056,10 @@ footer p {
   align-items: center;
   text-align: center;
   justify-content: center; 
+  /* box-shadow: 0 0 15px rgba(7, 7, 7, 0.9); */
+}
+.infinity-text{
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9);
 }
 .text-animation .infinity-text h1{
   font-size: 190px;
@@ -1222,6 +1357,11 @@ footer p {
 }
 /* 768 not 767 */
 @media (max-width: 768px) {
+  /* Home Page Carousel */
+      #showcase{
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
    /* Blog/Gallery Page */
       .containerVdo {
           grid-template-columns: 1fr; 
@@ -1249,6 +1389,10 @@ footer p {
           height: 20vh; 
       }
  /* Home Page Carousel */
+        #showcase{
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+      }
       .carousel-img-1 {
           background: url("../img/PM-100.png");
           background-size: cover;  

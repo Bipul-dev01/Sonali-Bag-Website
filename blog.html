@@ -43,7 +43,77 @@
        </ul>
       </div>
     </div>
-   </nav>  
+   </nav> 
+   
+<!-- Filterable Image Gallery  -->
+    <div class="containerFilter">
+        <!-- Filter buttons -->
+        <div class="filter_buttons">
+            <button1 class="active" data-name="all">Show All</button1>
+            <button1 data-name="Laboratory">Laboratory</button1>
+            <button1 data-name="apparatus">Apparatus</button1>
+            <button1 data-name="feedstock">Feedstock</button1>
+        </div> 
+        <!-- Images Cards  -->
+        <div class="filterable_cards">
+            <div class="cardFilter" data-name="Laboratory">
+                <img src="images_Blog_Gallery/Laboratory1.png" alt="Laboratory">
+                <div class="card_body">
+                    <h6 class="card_title">Laboratory</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="Laboratory">
+                <img src="images_Blog_Gallery/Laboratory2.png" alt="Laboratory">
+                <div class="card_body">
+                    <h6 class="card_title">Laboratory</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="Laboratory">
+                <img src="images_Blog_Gallery/Laboratory3.png" alt="Laboratory">
+                <div class="card_body">
+                    <h6 class="card_title">Laboratory</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="apparatus">
+                <img src="images_Blog_Gallery/Machine1.png" alt="apparatus">
+                <div class="card_body">
+                    <h6 class="card_title">Apparatus</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="apparatus">
+                <img src="images_Blog_Gallery/Machine500x500.png" alt="apparatus">
+                <div class="card_body">
+                    <h6 class="card_title">Apparatus</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="feedstock">
+                <img src="images_Blog_Gallery/shoe-1.jpg" alt="feedstock">
+                <div class="card_body">
+                    <h6 class="card_title">Feedstock</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+
+            <div class="cardFilter" data-name="feedstock">
+                <img src="images_Blog_Gallery/shoe-2.jpg" alt="feedstock">
+                <div class="card_body">
+                    <h6 class="card_title">Feedstock</h6>
+                    <p class="card_text">Lorem ispam dole...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- Video gallery -->
 <section id="videoGallery">
     <h3 class="headingVideo">Video Gallery</h3>
@@ -278,6 +348,44 @@
          <p> © Copyright 2022 | Developed by World Technovision.</p>
       </div>
 </section>
+
+<!-- Filterable Gallery Script -->
+<script>
+    // Select all filter buttons & filterables cards
+
+const filterButtons=document.querySelectorAll(".filter_buttons button1");
+const filterableCards=document.querySelectorAll(".filterable_cards .cardFilter");
+
+// console.log(filterButtons, filterableCards);
+
+// Define the filterCard function
+const filterCard=(e)=>{
+   document.querySelector(".active").classList.remove("active");
+ 
+//   document.querySelectorAll('.button1').style.backgroundColor = "blue"; 
+
+   e.target.classList.add("active");
+
+// console.log(e.target);
+
+  //  Iterate over each filterable card
+
+  filterableCards.forEach(cardFilter=>{
+    // Add "hide" class to hide the card initially
+    cardFilter.classList.add("hide");
+
+    // Check if the card matches the selected filter or "all" is selected
+    
+    if(cardFilter.dataset.name===e.target.dataset.name || e.target.dataset.name==="all" ){
+      cardFilter.classList.remove("hide");
+    }
+  });
+}
+
+// Add click event listener to each filter button
+filterButtons.forEach(button1=>button1.addEventListener("click", filterCard));
+    
+</script>
  <!-- blog.html    -->
  <script>
      let listVideo=document.querySelectorAll('.video-list .vid');
