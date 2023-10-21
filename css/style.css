@@ -127,7 +127,7 @@ html{
   background-size: cover;
 }
 .carousel-img-1 {
-  background: url("../img/PM-101.png");
+  background: url("../img/Carousel/PM-101.png");
   background-size: cover;
 }
 .carousel-item .container .carousel-caption  h1{
@@ -146,7 +146,7 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-2 {
-  background: url("../img/DSC07972\ \(1\).jpg");
+  background: url("../img/Carousel/Scientist1.jpg");
   background-size: cover; }
 .carousel-img-2 .container h1{
   font-size: 35px;
@@ -164,13 +164,13 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-3 {
-  background: url("../img/allProduct1.png");
+  background: url("../img/Carousel/allProduct1.png");
   background-size: cover; }
 .carousel-img-4 {
-  background: url("../img/chart.jpg");
+  background: url("../img/Carousel/chart.jpg");
   background-size: cover; }
 .carousel-img-5 {
-  background: url("../img/production-raw-file.jpg");
+  background: url("../img/Carousel/Scientist2.jpg");
   background-size: cover; }
 /* ***************************************************************
     Home section Styling
@@ -353,8 +353,7 @@ html{
 #homeInfo{
   margin-top: 50px;
   margin-bottom: -30px;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: 'Poppins', sans-serif; 
 }
 #homeInfo .container p{
   text-align: justify;
@@ -579,6 +578,9 @@ footer p {
   color: #fff;
   font-size: 20px;
   margin-right: 10px; }
+  .contact .info li:nth-child(3){
+margin-top: -20px !important;
+  }
 .contact .info li span {
   color: #999; }
 .contact .info li a {
@@ -1018,14 +1020,18 @@ button1:hover{
   background: #6fa1c2; }
 .containerProduct p{
   line-height: 1.6rem;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   }
 .containerProduct .imageProduct img {
-  width: 100%;
-  height: 350px; }
+  width: 80%;
+  height: 350px;
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9); 
+}
 .containerProduct .row {
   background: #f49cbb;
-  border-radius: 50px 0; }
+  border-radius: 50px 0;
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9); 
+}
 .containerProduct .row .textF {
   font-family: 'Vollkorn', serif; }
 #secFooterServices {
@@ -1095,7 +1101,8 @@ button1:hover{
 }
 .contactt .imagec {
   max-width: 500px;
-  margin: 50px auto; }
+  margin: 50px auto;
+}
 .formc {
   grid-area: formc; }
 .infoc {
@@ -1285,6 +1292,7 @@ button1:hover{
             padding: 20px;
             padding-bottom: 50px;
             opacity: 0.9;
+            border: 2px solid #fff;
         }
         #navbarNav .nav-item .nav-link { 
             font-size: 18px;
@@ -1387,7 +1395,7 @@ button1:hover{
           margin-right: 0 !important;
       }
       .carousel-img-1 {
-          background: url("../img/PM-100.png");
+          background: url("../img/Carousel/PM-100.png");
           background-size: cover;  
       }
       .carousel-item {
@@ -1474,7 +1482,11 @@ button1:hover{
       }
       .containerProduct {
           padding: 40px; 
-      }  
+      }
+      #productDisplay .containerProduct .imageProduct img{
+        width: 100%;
+        height: 250px !important;
+      }
       .containerProduct .text-center{
           padding: 25px !important;
       }
