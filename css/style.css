@@ -127,7 +127,7 @@ html{
   background-size: cover;
 }
 .carousel-img-1 {
-  background: url("../img/Carousel/PM-101.png");
+  background: url("../img/Carousel/PM-101.png") no-repeat center;
   background-size: cover;
 }
 .carousel-item .container .carousel-caption  h1{
@@ -146,7 +146,7 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-2 {
-  background: url("../img/Carousel/Scientist1.jpg");
+  background: url("../img/Carousel/Scientist1.jpg") no-repeat center;
   background-size: cover; }
 .carousel-img-2 .container h1{
   font-size: 35px;
@@ -164,13 +164,13 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-3 {
-  background: url("../img/Carousel/allProduct1.png");
+  background: url("../img/Carousel/allProduct1.png") no-repeat center;
   background-size: cover; }
 .carousel-img-4 {
-  background: url("../img/Carousel/Scientist3.jpg");
+  background: url("../img/Carousel/Scientist3.jpg") no-repeat center;
   background-size: cover; }
 .carousel-img-5 {
-  background: url("../img/Carousel/Scientist2.jpg");
+  background: url("../img/Carousel/Scientist2.jpg") no-repeat center;
   background-size: cover; }
 /* ***************************************************************
     Home section Styling
