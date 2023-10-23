@@ -172,6 +172,9 @@ html{
 .carousel-img-5 {
   background: url("../img/Carousel/Scientist2.jpg") no-repeat center;
   background-size: cover; }
+.carousel-img-6 {
+  background: url("../img/Carousel/Flow Chart Of Sonali Bag.png") no-repeat center;
+  background-size: cover; }
 /* ***************************************************************
     Home section Styling
 *************************************************************** */
@@ -1395,7 +1398,11 @@ button1:hover{
           margin-right: 0 !important;
       }
       .carousel-img-1 {
-          background: url("../img/Carousel/PM-100.png");
+          background: url("../img/Carousel/PM-100.png") no-repeat center;
+          background-size: cover;  
+      }
+      .carousel-img-6 {
+          background: url("../img/Carousel/FlowChartResponsive.png") no-repeat center;
           background-size: cover;  
       }
       .carousel-item {
@@ -1417,6 +1424,16 @@ button1:hover{
       .carousel-item .container .carousel-caption .btn {
           font-size: 10px; 
       } 
+      .carousel .carousel-control-prev{
+          left: 20px;
+          width: 30px;
+          height: 30px;
+      }
+      .carousel .carousel-control-next{
+          right: 23px;
+          width: 30px;
+          height: 30px;
+      }
       #getStarted {
           min-height: 350px; 
       } 
