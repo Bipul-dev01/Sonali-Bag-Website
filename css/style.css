@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:ital,wght@1,100&family=Vollkorn:ital@1&display=swap");
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 html{
   scroll-behavior: smooth;
 }
@@ -23,34 +22,41 @@ html{
 }
 .navbar {
   height: 85px;
-  /* background: #042910;  */
   background: #008000;
 }
-  .navbar .nav-item {
+.navbar .nav-item {
     padding-left: 1em; 
-  }
-  
-  .navbar .nav-link {
+  } 
+.navbar .nav-link {
+    position: relative;
     text-transform: uppercase;
     font-weight: 600;
     font-style: italic;
     font-size: 18px;
-    /* color: crimson !important;  */
   }
-  .navbar .nav-link:hover{
+.navbar .nav-link:hover{
     color: #fff !important;
-    /* background-color: #19d44b;
-    border-radius: 10px; */
   }
-  .navbar .container img{
+.navbar .nav-link::after{
+    content: " ";
+    position: absolute;
+    background-color: #f5bf03;
+    height: 2.5px;
+    width: 0;
+    left: 6px;
+    bottom: -0.1px;
+    transition: all 0.5s ease;
+  }
+.nav-link:hover:after{
+    width: 90%;
+  }
+.navbar .container img{
       border-radius: 50px;
     }
-  .navbar .container h3 {
-    /* color: #e0e7ec; */
+.navbar .container h3 {
     color: #f5bf03;
     font-size: 35px;
     font-weight: 600; 
-    /* text-shadow: 1px 1px #fff;  */
   }
 .divfalse {
   margin-top: 110px; }
@@ -202,6 +208,7 @@ html{
     margin-top: 47px;
     margin-bottom: 60px;
 }
+
 .weird-container{
     display: flex;
     justify-content: center;
@@ -310,6 +317,16 @@ html{
     text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
+.weird-card:hover{
+  box-shadow: 0 15px 0 #2ac587,
+    inset 0 -15px 0 rgba(255,255,255,0.25), 0 45px 0 rgba(0,0,0,0.15);
+     transition: all 0.7s ease;
+}
+.weird-card:hover .weird-icon {
+  box-shadow: 0 15px 0 #f5bf03,
+    inset 0 -15px 0 rgba(255,255,255,0.25), 0 45px 0 rgba(0,0,0,0.15);
+    transition: all 0.7s ease;
+}  
 /* ***********************************************************
     Home Page - Home Get Started
 *********************************************************** */
@@ -632,7 +649,7 @@ margin-top: -20px !important;
 ****************************************************** */
 #page-header {
   margin-top: 110px;
-  background: url(../images/juteFarmer.jpg);
+  background: url(../images/juteFarmer.jpg) no-repeat center;
   background-size: cover;
   height: 400px;
   background-attachment: fixed; }
@@ -653,7 +670,9 @@ margin-top: -20px !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh; 
+  width: 90%;
+}
 .about-left-content > div {
   background: #f49cbb;
   padding: 4rem 4rem 2.5rem 5rem;
@@ -693,10 +712,14 @@ margin-top: -20px !important;
   -webkit-filter: blur(3px);
   opacity: 0;
   transition: all 0.6s ease; }
-.shadow:hover .about-img {
-  transform: translateY(-10px); }
+.about-wrapper:hover .about-img {
+  transform: translateY(-15px); 
+}
+/* .shadow:hover .about-img {
+  transform: translateY(-10px); } */
 .shadow:hover::after {
-  opacity: 1; }
+  opacity: 1; 
+} 
 .about-left-content h2 {
   font-size: 2rem;
   margin: 2.2rem 0 0.6rem 0;
@@ -987,6 +1010,7 @@ button1:hover{
       color: #fff !important;
       /* text-decoration: none; */
     }
+   transition: all 0.6s ease;
   }
 /* *******************************************************
     Styling Service.html
@@ -1231,6 +1255,9 @@ button1:hover{
 /* Max Width */
 @media (max-width: 991px) {   
   /* About Us Page */
+    .about-left {
+        width: 100%;
+      }
     .article {
         margin-top: 100vh; 
       }  
@@ -1348,6 +1375,9 @@ button1:hover{
         #navbarNav .nav-item:nth-child(1) {
             margin-top: 30px; 
         }
+        .nav-link:hover:after{
+            width: 0;
+        }
     /* Home Page Carousel */
         .carousel-item .container .carousel-caption  h1{
             font-size: 20px;
@@ -1365,11 +1395,15 @@ button1:hover{
             min-height: 300px; 
         } 
       /* About Us Page */
+        .about-left {
+            width: 100%;
+            margin-top: 100px;
+        }
         .about-right {
-            margin-top: 60px; 
+            margin-top: 140px; 
         }
         .article {
-            margin-top: 120vh;
+            margin-top: 150vh;
         } 
     /* Services Page */
         #productDisplay .containerProduct .imageProduct img{
@@ -1510,6 +1544,9 @@ button1:hover{
   /* About Us Page */
       #secWrapper {
           margin-top: 15vh; 
+      }
+      .about-left {
+          width: 100%;
       }
       .about-right {
         /* margin-top: 12vh;  */
