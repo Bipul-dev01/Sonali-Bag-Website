@@ -27,12 +27,21 @@ html{
   background: #008000;
 }
   .navbar .nav-item {
-    padding-left: 1em; }
+    padding-left: 1em; 
+  }
+  
   .navbar .nav-link {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
-    font-size: 18px; }
+    font-size: 18px;
+    /* color: crimson !important;  */
+  }
+  .navbar .nav-link:hover{
+    color: #fff !important;
+    /* background-color: #19d44b;
+    border-radius: 10px; */
+  }
   .navbar .container img{
       border-radius: 50px;
     }
@@ -72,7 +81,7 @@ html{
   left: 0;
   width: 0;
   height: 100%;
-  /* color: #01fe87; */
+  color: #01fe87;
   -webkit-text-stroke: 0vw #383d52;
   border-right: 2px solid #01fe87;
   overflow: hidden;
@@ -87,7 +96,10 @@ html{
     Styling Carousel
 ****************************************************** */
 #showcase{
-  box-shadow: 0 0 15px rgba(7, 7, 7, 0.9);
+  box-shadow: 2px 3px 18px 1px rgba(0, 0, 0, 0.39);
+}
+#showcase:hover{
+  box-shadow: 0 0 15px #275be9;
 }
 .carousel-indicators li{
   width: 30px;
@@ -167,7 +179,7 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-3 {
-  background: url("../img/Carousel/allProduct1.png") no-repeat center;
+  background: url("../img/Carousel/Untitled\ design.png") no-repeat center;
   background-size: cover; }
 .carousel-img-4 {
   background: url("../img/Carousel/Scientist3.jpg") no-repeat center;
@@ -646,6 +658,9 @@ margin-top: -20px !important;
   background: #f49cbb;
   padding: 4rem 4rem 2.5rem 5rem;
   text-align: center; }
+.about-left-content:hover{
+  box-shadow: 0 0 20px #4070f4;
+} 
 .about-left-content {
   box-shadow: 2px 3px 18px 1px rgba(0, 0, 0, 0.39); }
 .about-img img {
@@ -965,6 +980,14 @@ button1:hover{
   color: #fff;
   font-weight: 400;
   font-style: italic; }
+  #accordion .card:hover{
+    background: #008000 !important;
+    color: #fff !important;
+    .card-header a{
+      color: #fff !important;
+      /* text-decoration: none; */
+    }
+  }
 /* *******************************************************
     Styling Service.html
 ******************************************************* */
@@ -1113,6 +1136,9 @@ button1:hover{
 }
 .formc{
   height: 870px;
+}
+.contactt:hover{
+  box-shadow: 0 5px 35px rgba(246, 246, 244, 0.5);
 }
 .contactt .imagec {
   max-width: 500px;
