@@ -185,7 +185,7 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-3 {
-  background: url("../img/Carousel/Untitled\ design.png") no-repeat center;
+  background: url("../img/Carousel/SonaliBagAllProducts.png") no-repeat center;
   background-size: cover; }
 .carousel-img-4 {
   background: url("../img/Carousel/Scientist3.jpg") no-repeat center;
@@ -208,7 +208,6 @@ html{
     margin-top: 47px;
     margin-bottom: 60px;
 }
-
 .weird-container{
     display: flex;
     justify-content: center;
@@ -1008,9 +1007,9 @@ button1:hover{
     color: #fff !important;
     .card-header a{
       color: #fff !important;
-      /* text-decoration: none; */
+      transition: all 0.9s ease;
     }
-   transition: all 0.6s ease;
+   transition: all 0.9s ease;
   }
 /* *******************************************************
     Styling Service.html
