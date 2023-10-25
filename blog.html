@@ -49,10 +49,10 @@
     <div class="containerFilter">
         <!-- Filter buttons -->
         <div class="filter_buttons">
-            <button1 class="active" data-name="all">Show All</button1>
-            <button1 data-name="Laboratory">Laboratory</button1>
-            <button1 data-name="apparatus">Apparatus</button1>
-            <button1 data-name="feedstock">Feedstock</button1>
+            <button class="active1" data-name="all">Show All</button>
+            <button data-name="Laboratory">Laboratory</button>
+            <button data-name="apparatus">Apparatus</button>
+            <button data-name="feedstock">Feedstock</button>
         </div> 
         <!-- Images Cards  -->
         <div class="filterable_cards">
@@ -139,10 +139,7 @@
                     <h6 class="card_title">Apparatus</h6>
                     <p class="card_text">Lorem ispam dole...</p>
                 </div>
-            </div>
-            
-            
-            
+            </div>         
         </div>
     </div>
 <!-- Video gallery -->
@@ -384,18 +381,18 @@
 <script>
     // Select all filter buttons & filterables cards
 
-const filterButtons=document.querySelectorAll(".filter_buttons button1");
+const filterButtons=document.querySelectorAll(".filter_buttons button");
 const filterableCards=document.querySelectorAll(".filterable_cards .cardFilter");
 
 // console.log(filterButtons, filterableCards);
 
 // Define the filterCard function
 const filterCard=(e)=>{
-   document.querySelector(".active").classList.remove("active");
+   document.querySelector(".active1").classList.remove("active1");
  
 //   document.querySelectorAll('.button1').style.backgroundColor = "blue"; 
 
-   e.target.classList.add("active");
+   e.target.classList.add("active1");
 
 // console.log(e.target);
 
@@ -414,7 +411,7 @@ const filterCard=(e)=>{
 }
 
 // Add click event listener to each filter button
-filterButtons.forEach(button1=>button1.addEventListener("click", filterCard));
+filterButtons.forEach(button=>button.addEventListener("click", filterCard));
     
 </script>
  <!-- blog.html    -->

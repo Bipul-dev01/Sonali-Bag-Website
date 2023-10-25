@@ -432,7 +432,7 @@ html{
 .border-Animated:after{
     content: "";
     position: absolute;
-    background: url('../img/Dr Mubarak1.jpg') no-repeat center;
+    background: url('../img/Carousel/Scientist1.jpg') no-repeat center;
     background-size: cover; 
     object-fit: cover;
     height:90%;
@@ -855,7 +855,7 @@ margin-top: -20px !important;
     margin-top: 100px;
     padding: 20px;   
 }
-button1{
+.filter_buttons button{
     flex-wrap: wrap;
     padding: 10px 20px;
     font-size: 18px;
@@ -874,11 +874,11 @@ button1{
     gap: 10px;
     margin-bottom: 50px;
 }
-button1.active{
+button.active1{
     background: #4070f4;
     color: #fff;
 }
-button1:hover{
+button:hover{
     background: #4070f4;
     color: #fff;
 }
