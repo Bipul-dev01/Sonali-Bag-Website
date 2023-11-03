@@ -849,7 +849,7 @@ margin-top: -20px !important;
     position: relative;
     /* min-height: 100vh; */
     background: #e7f2fd;
-    max-width: 1350px;
+    /* max-width: 1350px; */
     width: 100%;
     margin: 50px auto;
     margin-top: 100px;
@@ -1251,6 +1251,184 @@ button1:hover{
 /* *****************************************************
     Media query 
 ***************************************************** */
+@media (min-width: 1400px){
+/* Navbar */
+  .navbar {
+    height: 85px;
+    background: #008000;
+  }
+  .navbar .nav-item {
+    padding-left: 1em; 
+  } 
+  .navbar .nav-link {
+    font-size: 22px;
+  }
+  .navbar .container h3 { 
+    font-size: 45px;
+  }
+/* Carousel */
+  .carousel-item {
+    height: 950px;
+    width: 100%; 
+  }
+  .carousel-img-6 {
+    background: url("../img/Carousel/FlowChartResponsive.png") no-repeat center; 
+  } 
+  .weird-card{
+    width: 400px;
+    height: 520px;
+  }
+  .weird-content{
+    padding: 45px;
+    padding-top: 170px;
+  }
+  .weird-content h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  .weird-content p{
+    font-size: 18px;
+    line-height: 1.3em;
+  }
+  #getStarted {
+    position: relative;
+    background: url("../img/jute-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 450px; 
+  }
+
+/* Home Section */
+  #homeInfo .container{
+     margin-top: 100px;
+     margin-bottom: 20px;
+      max-width: 1500px;
+    }
+  .border-Animated{
+    height: 400px;
+    width: 400px;
+  }
+/* Home - Gallery */
+  .gallery .box {
+    width: 380px;
+    height: 350px;
+  }
+  .gallery .box .imgBox img {
+    width: 380px;
+    height: 350px;
+  }
+/* Footer */
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 10%;
+    padding-top: 80px; 
+  }
+  footer .containerFooter .aboutusFooter {
+    width: 32%; 
+  }
+  #secFooterIndexx .containerFooter .sec h2 {
+   margin-bottom: 50px; 
+  }
+.containerFooter .sec h2{
+    margin-bottom: 50px;
+  }
+  .sci {
+    margin-top: 33px;
+  }
+  .sci li a {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    ; 
+  }
+  .quickLinks {
+    position: relative;
+    width: 22%;
+    margin-left: 120px; 
+  }
+  .quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 13px;
+    display: inline-block; 
+  }
+  .contact {
+    width: 33%;
+    margin-right: 0 !important; }
+  .contact ul{
+    padding-left: 0 !important;
+  }
+  .contact .info li {
+      display: flex;
+      margin-bottom: 16px; }
+  .contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+      margin-right: 15px; }
+  .contact .info li:nth-child(3){
+    margin-top: -20px !important;
+  }
+
+/* About Us Page */
+  .about-left {
+    background: #f26a8d;
+    height: 100vh; 
+    width: 90%;
+  }
+  .about-left-content > div {
+    background: #f49cbb;
+    padding: 7rem 8.5rem 4.5rem 9rem;
+  }
+  .about-img img {
+    display: block;
+    width: 900px; }
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
+  .shadow {
+    width: 300px;
+    height: 300px;
+  }
+/* Services Page */
+  .containerProduct .imageProduct img {
+    width: 80%;
+    height: 460px;
+  }
+  #productDisplay .containerProduct h2{
+    text-align: center;
+    margin-top: 50px;
+  }
+/* Gallery/Blog */
+  .filter_buttons{
+    margin-top: 50px;
+  }
+  .cardFilter{
+/* flex-grow: 1; */
+    flex-basis: 400px;
+    padding: 3px;
+  }
+  .cardFilter img{
+    width: 100%;
+    height: 300px;
+  }
+  .containerVdo .video-list {
+    height: 600px;
+  }
+  .containerVdo .video-list .vid h3{
+    font-size: 20px;
+  }
+/* Contact Us Page */
+  .mapc {
+    height: 377px;
+  }
+}
+
 /* Max Width */
 @media (max-width: 991px) { 
   /* Carousel Home Page  */
