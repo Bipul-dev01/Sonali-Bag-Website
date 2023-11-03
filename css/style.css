@@ -810,7 +810,7 @@ margin-top: -20px !important;
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 5%;
-  background: #f49cbb;
+  background: #e7f2fd;
   font-size: larger;
   line-height: 20px; }
 .article-border {
@@ -855,7 +855,7 @@ margin-top: -20px !important;
     margin-top: 100px;
     padding: 20px;   
 }
-.filter_buttons button{
+.filter_buttons button1{
     flex-wrap: wrap;
     padding: 10px 20px;
     font-size: 18px;
@@ -874,11 +874,11 @@ margin-top: -20px !important;
     gap: 10px;
     margin-bottom: 50px;
 }
-button.active1{
+button1.active1{
     background: #4070f4;
     color: #fff;
 }
-button:hover{
+button1:hover{
     background: #4070f4;
     color: #fff;
 }
@@ -1042,7 +1042,7 @@ button:hover{
     padding-left: 10px;
     color: #0e6ffc;
     /* border: 1px solid orange; */
-    animation: spin_words 7s infinite;
+    animation: spin_words 10s infinite;
 }
 @keyframes spin_words{
     10%{
@@ -1089,7 +1089,7 @@ button:hover{
   box-shadow: 0 0 20px #4070f4;
 }
 .containerProduct .row {
-  background: #f49cbb;
+  background: #ddd4d4;
   border-radius: 50px 0;
   box-shadow: 0 0 15px rgba(7, 7, 7, 0.9); 
 }
@@ -1252,7 +1252,12 @@ button:hover{
     Media query 
 ***************************************************** */
 /* Max Width */
-@media (max-width: 991px) {   
+@media (max-width: 991px) { 
+  /* Carousel Home Page  */
+    .carousel-img-6 {
+        background: url("../img/Carousel/FlowChartResponsive.png") no-repeat center;
+        background-size: cover;  
+      } 
   /* About Us Page */
     .about-left {
         width: 100%;
@@ -1352,6 +1357,10 @@ button:hover{
             height: 340px;
             width: 100%; 
         } 
+        .carousel-img-6 {
+          background: url("../img/Carousel/FlowChartResponsive.png") no-repeat center;
+          background-size: cover;  
+      }
     /* Navbar for All Page */
         #navbarNav{
             background-color: #111;
