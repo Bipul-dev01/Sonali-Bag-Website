@@ -1254,8 +1254,12 @@ button1:hover{
 @media (min-width: 1400px){
 /* Navbar */
   .navbar {
-    height: 85px;
-    background: #008000;
+    height: 115px;
+  }
+  .navbar .container{
+    max-width: 1900px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
   .navbar .nav-item {
     padding-left: 1em; 
@@ -1265,6 +1269,9 @@ button1:hover{
   }
   .navbar .container h3 { 
     font-size: 45px;
+  }
+  .divfalse {
+    margin-top: 160px; 
   }
 /* Carousel */
   .carousel-item {
@@ -1375,6 +1382,9 @@ button1:hover{
   }
 
 /* About Us Page */
+  #page-header {
+    margin-top: 160px;
+   }
   .about-left {
     background: #f26a8d;
     height: 100vh; 
@@ -1396,6 +1406,9 @@ button1:hover{
     height: 300px;
   }
 /* Services Page */
+.rotatingContainer{
+    margin-top: 160px;
+  }
   .containerProduct .imageProduct img {
     width: 80%;
     height: 460px;
@@ -1423,7 +1436,10 @@ button1:hover{
   .containerVdo .video-list .vid h3{
     font-size: 20px;
   }
-/* Contact Us Page */
+  /* Contact Us Page */
+  .text-animation{
+    margin-top: 164px;
+  }
   .mapc {
     height: 377px;
   }
