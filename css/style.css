@@ -36,6 +36,8 @@ html{
   }
 .navbar .nav-link:hover{
     color: #fff !important;
+    transform: translateY(-2.5px);
+    transition: all 0.5s ease;
   }
 .navbar .nav-link::after{
     content: " ";
@@ -675,7 +677,8 @@ margin-top: -20px !important;
 .about-left-content > div {
   background: #f49cbb;
   padding: 4rem 4rem 2.5rem 5rem;
-  text-align: center; }
+  text-align: center; 
+}
 .about-left-content:hover{
   box-shadow: 0 0 20px #4070f4;
 } 
@@ -734,7 +737,8 @@ margin-top: -20px !important;
   background: #fff;
   display: flex;
   justify-content: center;
-  padding: 0.8rem 0; }
+  padding: 0.8rem 0; 
+}
 .icons li {
   list-style-type: none;
   background: #f36a8d;
@@ -835,10 +839,20 @@ margin-top: -20px !important;
   font-size: 25px; }
 #author .card{
     background: #e7f2fd;
+    box-shadow: 2px 3px 18px 1px rgba(0, 0, 0, 0.30);
   }
+#author .container .card .card-body img{
+  border: 2px solid #fff;
+}
 #author .card:hover {
   background: #3292a6;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.8s ease; 
+}
+#author .card:hover img{
+ transform: translateY(-6px);
+ transition: all 0.5s ease-in-out; 
+}
 #author .card:hover .fa {
     color: #fff; }
 .aboutUs-footer-sci{
@@ -1761,7 +1775,12 @@ button1:hover{
       .article {
           /* margin-top: 180vh;  */
           margin-top: 140vh;
-      } 
+      }
+      .article-border {
+  border: 4px dotted #008000;
+  /* border: 4px groove; */
+  
+} 
       #author{
           margin-bottom: 60px;
           width: 95%;
