@@ -169,7 +169,7 @@ html{
     text-shadow: 2px 2px #000;
 }
 .carousel-img-2 {
-  background: url("../img/Carousel/Scientist1.jpg") no-repeat center;
+  background: url("../img/Carousel/scientist1000.png") no-repeat center;
   background-size: cover; }
 .carousel-img-2 .container h1{
   font-size: 35px;
@@ -216,11 +216,14 @@ html{
     align-items: center;
     flex-wrap: wrap;
     /* padding: 40px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .weird-card{
     position: relative;
-    width: 320px;
-    height: 450px;
+    width: 340px;
+    /* height: 450px; */
+    height: 680px;
     margin: 30px;
     background: #287bff;
     border-radius: 20px;
@@ -327,7 +330,24 @@ html{
   box-shadow: 0 15px 0 #f5bf03,
     inset 0 -15px 0 rgba(255,255,255,0.25), 0 45px 0 rgba(0,0,0,0.15);
     transition: all 0.7s ease;
-}  
+} 
+/******************************Home Get Started******************************
+    Home Page - About BJMC Section 
+*********************************************************** */
+.aboutBJMC{
+  position: relative;
+  padding: 80px 120px;
+  margin-bottom: 70px;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  border: 5px double #008000;
+  background-color: #f2eded;
+  /* background: url("../img/pic jute/jute-7.jpg") no-repeat center;
+  background-size: cover;   */
+} 
+
 /* ***********************************************************
     Home Page - Home Get Started
 *********************************************************** */
@@ -434,7 +454,7 @@ html{
 .border-Animated:after{
     content: "";
     position: absolute;
-    background: url('../img/Carousel/Scientist1.jpg') no-repeat center;
+    background: url('../img/Carousel/scientist1000.png') no-repeat center;
     background-size: cover; 
     object-fit: cover;
     height:90%;
@@ -550,7 +570,9 @@ footer .containerFooter .aboutusFooter {
 footer .containerFooter h2 {
   position: relative;
   color: #fff;
-  margin-bottom: 15px; }
+  margin-bottom: 35px; 
+  margin-top: 25px;
+}
 footer .containerFooter h2:before {
   content: '';
   position: absolute;
@@ -829,6 +851,18 @@ margin-top: -20px !important;
 .article .article-border p {
   text-align: justify;
   line-height: 1.6; }
+<!--Styling Project Funding Table Start-->
+table, td, th {  
+  border: 2px solid #ddd;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 15px;
+}
 #author{
   margin-bottom: 60px;
 }
@@ -934,13 +968,24 @@ button1:hover{
     padding: 15px 20px 20px;
 }
 .card_title{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #333;
 }
 .card_text{
     font-size: 18px;
     color: #333;
+}
+/* News Gallary */
+.news{
+   margin-top: 60px;
+   background: #eee;
+   padding: 40px 40px ;
+   padding-right: 45px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 /* Video Gallary */
 #videoGallery {
@@ -1087,6 +1132,17 @@ button1:hover{
         transform: translateY(-400%);
     }
 }
+/* Styling Significant start  */
+.significant{
+  padding: 60px;
+  margin-top: 50px;
+  background: #ddd4d4;
+}
+.significant p{
+  color: #000;
+  font-size: 18px;
+}
+
 #productDisplay {
   margin-top: 60px; }
 
@@ -1673,6 +1729,7 @@ button1:hover{
         }
 }
 @media screen and (max-width: 480px) {
+
   /*Home Page Preloader */
       #loading {
           width: 100%;
@@ -1739,6 +1796,10 @@ button1:hover{
   /* Home Page (Text animation) */
       .center-div {
           min-height: 10vh;
+      }
+  /* Home Page About BJMC */
+      .aboutBJMC{
+          padding: 30px 40px;
       }
   /* Home Page - Home Info */
       #homeInfo .border-Animated{
