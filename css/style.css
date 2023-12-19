@@ -1356,7 +1356,7 @@ button1:hover{
   /* News section Gallery/Blog */
       #particles-js{
          width: 100%;  
-         height: 210vh; 
+         height: 180vh; 
      }
 }
 @media (min-width: 1400px){
