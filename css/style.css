@@ -6,6 +6,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 /* Preloader */
 #loading {
   position: relative;
@@ -23,6 +24,7 @@ html{
 .navbar {
   height: 85px;
   background: #008000;
+  border-bottom: 2px solid #fff;
 }
 .navbar .nav-item {
     padding-left: 1em; 
@@ -649,11 +651,14 @@ margin-top: -20px !important;
 .copyrighttext {
   width: 100%;
   background: #181818;
-  padding: 8px 100px;
-  padding-top: 15px;
+  padding: 20px 100px;
+  padding-top: 24px;
   text-align: center;
-  /* color: #999;  */
-  color: #fff;
+  color: #999; 
+  font-size: 17px;
+}
+.copyrighttext p a{
+  text-decoration: none;
 }
 #myBtn {
   position: fixed;
@@ -977,19 +982,42 @@ button1:hover{
     color: #333;
 }
 /* News Gallary */
+
+#particles-js{
+     width: 100%;  
+     height: 235vh; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/newsbackground (2).jpg"); 
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center; 
+}
 .news{
+  position: absolute;
    margin-top: 60px;
-   background: #eee;
-   padding: 40px 40px ;
-   padding-right: 45px;
+   padding: 50px 40px ;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
+.news h1,h4{
+  color: #fff;
+}
+.news a{
+  color: #e0d0d0;
+  font-size: 15px;
+}
+.news a:hover{
+  background-color: green;
+}
 /* Video Gallary */
 #videoGallery {
   margin-top: 60px;
+  padding-top: 30px;
   box-sizing: border-box;
   text-transform: capitalize;
   background: #eee; }
@@ -1503,6 +1531,12 @@ button1:hover{
     width: 100%;
     height: 300px;
   }
+
+  /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 300vh; 
+     }
   .containerVdo .video-list {
     height: 600px;
   }
@@ -1537,6 +1571,12 @@ button1:hover{
         grid-template-columns: 1.5fr 1fr;
         padding: 10px; 
       } 
+  /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 300vh; 
+         margin-bottom: 50px;
+     }
   /* Contact Us Page */
     .text-animation{
         width: 100%;
@@ -1667,7 +1707,7 @@ button1:hover{
             font-size: 23px;
         }
         #getStarted {
-            min-height: 300px; 
+            min-height: 400px; 
         } 
       /* About Us Page */
         .about-left {
@@ -1713,6 +1753,11 @@ button1:hover{
           margin-left: 0 !important;
           margin-right: 0 !important;
         }
+  /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 300vh; 
+     }
    /* Blog/Gallery Page */
       .containerVdo {
           grid-template-columns: 1fr; 
@@ -1786,9 +1831,7 @@ button1:hover{
           width: 30px;
           height: 30px;
       }
-      #getStarted {
-          min-height: 350px; 
-      } 
+      
   /* Home Page home icon section */
       .weird-section .weird-container{
           padding: 0 !important;
@@ -1802,10 +1845,19 @@ button1:hover{
           padding: 30px 40px;
       }
   /* Home Page - Home Info */
+      .align-self-center{
+        padding-left: 40px;
+      }
+      #homeInfo .container p{
+        padding-right: 20px;
+      }
       #homeInfo .border-Animated{
           margin-top: 40px !important;
       }
   /* Home Page - Home Get Started */
+      #getStarted {
+          min-height: 430px; 
+      } 
       #getStarted .container h2 {
           font-size: 2rem; 
           font-weight: 500;
@@ -1821,6 +1873,10 @@ button1:hover{
       .gallery .box .imgBox img {
           width: 300px;
       }
+  /* footer Copy Right */
+  .copyrighttext p span{
+    display: block;
+  }
   /* About Us Page */
       #secWrapper {
           margin-top: 15vh; 
@@ -1849,6 +1905,12 @@ button1:hover{
       .aboutUs-footer-sci{
         padding-left: 0 !important;
       }
+ /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 300vh; 
+         margin-bottom: 50px;
+     }
   /* Services Page */
       .rotatingContainer{
           margin-top: 110px;
