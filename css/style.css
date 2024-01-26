@@ -990,7 +990,7 @@ button1:hover{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/newsbackground (2).jpg"); 
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/newsbackground.jpg"); 
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center; 
@@ -1352,13 +1352,13 @@ button1:hover{
 /* *****************************************************
     Media query 
 ***************************************************** */
-@media screen and (max-width: 1920px){
-  /* News section Gallery/Blog */
+/* @media screen and (max-width: 1920px){
+  News section Gallery/Blog
       #particles-js{
          width: 100%;  
          height: 180vh; 
      }
-}
+} */
 @media (min-width: 1400px){
 /* Navbar */
   .navbar {
@@ -1770,7 +1770,7 @@ button1:hover{
   /* News section Gallery/Blog */
       #particles-js{
          width: 100%;  
-         height: 300vh; 
+         height: 180vh; 
      }
    /* Blog/Gallery Page */
       .containerVdo {
@@ -1962,12 +1962,25 @@ button1:hover{
           animation: back 30s linear infinite;   
       }
 }
-
+@media screen and (max-width: 430px){
+  /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 200vh; 
+     }
+}
+@media screen and (max-width: 414px){
+  /* News section Gallery/Blog */
+      #particles-js{
+         width: 100%;  
+         height: 200vh; 
+     }
+}
 @media screen and (max-width: 375px){
   /* News section Gallery/Blog */
       #particles-js{
          width: 100%;  
-         height: 280vh; 
+         height: 240vh; 
      }
 }
 
