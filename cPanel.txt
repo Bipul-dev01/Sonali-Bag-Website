@@ -1,0 +1,62 @@
+
+
+responsive check
+************************************************************
+https://www.websiteplanet.com/webtools/responsive-checker/
+
+
+
+Diana Host:
+**************************************
+FTP Username: jute@sonalibag-bd.com
+FTP server: ftp.sonalibag-bd.com
+Pass: =$Cv}iMRi*hs
+FTP & explicit FTPS port:  21
+
+
+
+
+
+
+Login Details:
+
+Control Panel URL: http://103.169.160.66:2082/
+Once your domain has propagated, you may also use http://www.sonalibag-bd.com:2082/
+
+Username: sonaliba
+Password: .e7xxIXeP5C69-
+
+**************************************
+FTP Account:
+FTP Username: jute@sonalibag-bd.com
+FTP server: ftp.sonalibag-bd.com
+Pass: Je6}j~o,9(Hy
+FTP & explicit FTPS port:  21
+
+
+FTP Username: sonali@sonalibag-bd.com
+FTP server: ftp.sonalibag-bd.com
+Password: sonali@23$JUTE
+FTP & explicit FTPS port:  21
+
+*************************************
+
+New Account Information:
+
+Hosting Package: DH 2GB SSD NVMe
+Domain: sonalibag-bd.com
+First Payment Amount: TK 548.90BDT
+Recurring Amount: TK 2499.00BDT
+Billing Cycle: Annually
+Next Due Date: 11/10/2024
+
+Server Information
+
+Server Name: Server-8
+Server IP: 103.169.160.66
+
+If you are using an existing domain with your new hosting account, you will need to update the nameservers to point to the nameservers listed below.
+
+Nameserver 1: ns1.dianadns.com (45.79.28.41)
+Nameserver 2: ns2.dianadns.com (45.76.150.140)
+Nameserver 3: ns3.dianadns.com (52.87.237.25)

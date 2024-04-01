@@ -15,6 +15,29 @@
    <div id="loading">
       <img src="image-gif/loading.gif" alt="loader">
   </div>
+
+  <!-- Popup Card Start -->
+ <div class="popup">
+        <div class="containerBox">
+            <div class="closePopup">
+
+            </div>
+            <div class="imgBx">
+                <img src="images/popupImage/eid.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Eid Mubarak</h1>
+                    <p>May this auspicious occasion of Eid bring you and your loved ones immense joy, prosperity, and blessings. Wishing you a Eid filled with peace, happiness, and countless blessings!</p>
+                    <!-- <h3>Special offer</h3> -->
+                    <!-- <h2>80<sup>%</sup><span>off</span></h2> -->
+                    
+                    <a href="contact.html">Contact Us</a>
+                </div>        
+            </div>
+        </div>
+    </div>
+<!-- Popup Card End -->
 <!-- Navigation -->  
 <nav  class="navbar navbar-dark navbar-expand-md fixed-top " id="navbar">
        <div class="container">          
@@ -493,8 +516,8 @@ tomorrow it will bring a golden era of Bangladesh.</p>
       </div>
 </section>
 <!-- PreLoader Script Code: -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
-// <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(window).on("load",function(){
         $("#loading").fadeOut(1700);
@@ -529,6 +552,22 @@ $(window).on("load",function(){
       } 
    </script>
    
+<!-- Automatic show popup after 3s of page load -->
+    <script>
+        var popup = document.querySelector(".popup");
+        var closePopup = document.querySelector(".closePopup");
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block";
+            },1000);
+        };
+
+        closePopup.addEventListener('click', () => {
+            popup.style.display = "none";
+        })
+    </script>
+
 
    <!-- ionicon script -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
